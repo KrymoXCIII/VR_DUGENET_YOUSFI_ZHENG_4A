@@ -45,11 +45,30 @@ public class ControllerAI : MonoBehaviour
        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
        // Attribution des différentes fonctions
+
+       if (!playerInSightRange && !playerInAttackRange)
+       {
+           Patrolling();
+           Debug.Log("Patrol");
+       }
+
+       if (playerInSightRange && !playerInAttackRange)
+       {
+           ChasePlayer();
+           Debug.Log("Chase");
+           
+       }
+
+       if (playerInSightRange && playerInAttackRange)
+       {
+           
+               Debug.Log("Attack");
+               AttackPlayer();
+           
+           
+           
+       }
        
-       //if(!playerInSightRange && !playerInAttackRange) Patrolling();
-       //if(playerInSightRange && !playerInAttackRange) ChasePlayer();
-       //if(playerInSightRange && playerInAttackRange) AttackPlayer();
-       ChasePlayer();
                         
    }
 
@@ -92,8 +111,8 @@ public class ControllerAI : MonoBehaviour
        {
            // Attaque
            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-           rb.AddForce(transform.forward * 32f,ForceMode.Impulse);
-           rb.AddForce(transform.up * 8f,ForceMode.Impulse);
+           rb.AddForce(transform.forward * 100f,ForceMode.Impulse);
+           rb.AddForce(transform.up * 5f,ForceMode.Impulse);
            
            alreadyAttacked = true;
            Invoke(nameof(ResetAttack),timeBetweenAttacks);
