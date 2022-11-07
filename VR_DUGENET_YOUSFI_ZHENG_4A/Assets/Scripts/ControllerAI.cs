@@ -45,9 +45,12 @@ public class ControllerAI : MonoBehaviour
        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
        // Attribution des différentes fonctions
-       if(!playerInSightRange && !playerInAttackRange) Patrolling();
-       if(playerInSightRange && !playerInAttackRange) ChasePlayer();
-       if(playerInSightRange && playerInAttackRange) AttackPlayer();
+       
+       //if(!playerInSightRange && !playerInAttackRange) Patrolling();
+       //if(playerInSightRange && !playerInAttackRange) ChasePlayer();
+       //if(playerInSightRange && playerInAttackRange) AttackPlayer();
+       ChasePlayer();
+                        
    }
 
    private void Patrolling()
