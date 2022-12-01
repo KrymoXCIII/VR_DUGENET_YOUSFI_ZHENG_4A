@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(Rigidbody))]
-//[RequireComponent(typeof(XRGrabInteractable))]
+[RequireComponent(typeof(XRGrabInteractable))]
 
 public class Weapon : MonoBehaviour
 {
@@ -14,7 +15,53 @@ public class Weapon : MonoBehaviour
     public float damage;
 
     private Rigidbody rb;
-    //private XRGrabInteractable interactableWeapon;
+    private XRGrabInteractable interactableWeapon;
+    
+    protected virtual void Awake()
+    {
+        interactableWeapon = GetComponent<XRGrabInteractable>();
+        rb = GetComponent<Rigidbody>();
+        SetupInteractableWeaponEvents();
+    }
+
+    private void SetupInteractableWeaponEvents()
+    {
+        interactableWeapon.selectEntered.AddListener(PickUpWeapon);
+        interactableWeapon.selectExited.AddListener(DropWeapon);
+        interactableWeapon.activated.AddListener(StartShooting);
+        interactableWeapon.deactivated.AddListener(StopShooting);
+    }
+
+    private void PickUpWeapon(SelectEnterEventArgs interactor)
+    {
+        //cacher les mains lorsqu'on grab l'arme?
+        //interactor.GetComponent<MeshHidder>().Hide();
+    }
+ 
+    private void DropWeapon(SelectExitEventArgs interactor)
+    {
+        //interactor.GetComponent<MeshHidder>().Show();
+    }
+
+    protected virtual void StartShooting(ActivateEventArgs interactor)
+    {
+
+    }
+
+    protected virtual void StopShooting(DeactivateEventArgs interactor)
+    {
+
+    }
+
+    protected virtual void Shoot()
+    {
+        ApplyRecoil();
+    }
+
+    private void ApplyRecoil()
+    {
+        rb.AddRelativeForce(Vector3.back * recoilForce, ForceMode.Impulse);
+    }
 
     public void shoot()
     {
@@ -31,4 +78,6 @@ public class Weapon : MonoBehaviour
             Debug.Log("Did not Hit");
         }
     }
+    
+    
 }
