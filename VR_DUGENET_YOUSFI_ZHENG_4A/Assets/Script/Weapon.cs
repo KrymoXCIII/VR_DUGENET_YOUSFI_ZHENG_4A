@@ -13,6 +13,7 @@ public class Weapon : MonoBehaviour
     public float recoilForce;
     public Transform bulletSpawn;
     public float damage;
+    public PlayerManager player;
 
     private Rigidbody rb;
     private XRGrabInteractable interactableWeapon;
