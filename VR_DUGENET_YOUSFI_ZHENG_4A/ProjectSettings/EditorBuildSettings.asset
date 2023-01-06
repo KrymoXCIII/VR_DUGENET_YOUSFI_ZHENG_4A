@@ -9,12 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b97a8e342a6e5fb48a71e22cac428642
   - enabled: 1
-    path: Assets/Scenes/TerrainScene.unity
-    guid: edcd5e34c8063df47a1c31e5296c75ea
+    path: Assets/Scenes/Hallway.unity
+    guid: 2f555bdd2b9acdc4a89429ba812d3bfa
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fdbc5728fa8621d4588f631a50d559b8,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 126e8c8820d28214cb6d84252f74aa9c,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 64357aee61b9e0e4f963c109a4191fc0,
-      type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 7f27c5f5dd74384469accf2575f04c66,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dacc4d6d296284a4894ed462f7768fdc,
       type: 2}
