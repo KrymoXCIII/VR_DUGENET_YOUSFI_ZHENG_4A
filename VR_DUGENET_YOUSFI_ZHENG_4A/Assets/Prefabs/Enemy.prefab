@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3072662728637954828}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,8 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
   timeBetweenAttacks: 5
-  projectile: {fileID: 0}
+  projectile: {fileID: 875302064510867849, guid: eff8432ee8eb2fd4b8b34e0ed454c3a5,
+    type: 3}
   sightRange: 40
   attackRange: 5
   playerInSightRange: 0
