@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Projectile : MonoBehaviour
 {
     protected Weapon weapon;
+    public Rigidbody rb;
+    public float power = 10;
 
     public virtual void Init(Weapon weapon)
     {
@@ -14,7 +16,7 @@ public class Projectile : MonoBehaviour
 
     public virtual void Launch()
     {
-
+        rb.AddForce(transform.forward * power);
     }
 
     void OnCollisionEnter(Collision collision)
