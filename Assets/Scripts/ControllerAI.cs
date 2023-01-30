@@ -35,6 +35,7 @@ public class ControllerAI : MonoBehaviour
    private void Awake()
    {
        player = GameObject.Find("Player").transform;
+       projectile = GameObject.Find("Bullet");
        agent = GetComponent<NavMeshAgent>();
    }
 

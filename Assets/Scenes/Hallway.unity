@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 26dd16d4bd2a1204b84a6738ccda7e6e,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -210,7 +211,7 @@ GameObject:
   - component: {fileID: 271177976}
   - component: {fileID: 271177975}
   - component: {fileID: 271177974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,11 +303,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1413141422356941890, guid: 46cafee524c0154459277d27348bb197,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3072662728637954819, guid: 46cafee524c0154459277d27348bb197,
         type: 3}
       propertyPath: m_RootOrder
@@ -367,16 +363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 3072662728637954822, guid: 46cafee524c0154459277d27348bb197,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1298630737}
-    - target: {fileID: 3072662728637954822, guid: 46cafee524c0154459277d27348bb197,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 865781098}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cafee524c0154459277d27348bb197, type: 3}
 --- !u!1 &370935571
@@ -560,16 +546,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785996529986047030, guid: 57b53892cd07eef488e13b2a602a703c,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785996529990212758, guid: 57b53892cd07eef488e13b2a602a703c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57b53892cd07eef488e13b2a602a703c, type: 3}
@@ -780,12 +756,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &865781098 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 875302064510867849, guid: eff8432ee8eb2fd4b8b34e0ed454c3a5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1111988360}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1058234896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4079444010371905549, guid: 8eb226715c0426e4aa79c32f1b27eb26,
@@ -958,12 +928,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281537618}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1298630737 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4785996529986047026, guid: 57b53892cd07eef488e13b2a602a703c,
-    type: 3}
-  m_PrefabInstance: {fileID: 482061935}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1303793751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1142,7 +1106,7 @@ GameObject:
   - component: {fileID: 1498308981}
   - component: {fileID: 1498308980}
   - component: {fileID: 1498308979}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
