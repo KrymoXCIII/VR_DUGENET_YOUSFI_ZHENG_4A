@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("hit");
+        Debug.Log(hp);
         TakeDamage(10);
         
     }
