@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
 {
     protected Weapon weapon;
     public Rigidbody rb;
-    public float power = 10;
+    public float power = 1000;
 
     public virtual void Init(Weapon weapon)
     {
@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
 
     public virtual void Launch()
     {
-        rb.AddForce(transform.forward * power);
+        rb.AddForce(transform.forward * power, ForceMode.Impulse);
     }
 
     void OnCollisionEnter(Collision collision)
