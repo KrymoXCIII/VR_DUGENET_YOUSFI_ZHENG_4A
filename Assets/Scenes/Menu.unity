@@ -2004,7 +2004,7 @@ RectTransform:
   m_GameObject: {fileID: 331656558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 138}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1281190995}
@@ -3734,6 +3734,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3600864102356728619, guid: 90afa604237997541bcf5bd05498d947,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600864102356728619, guid: 90afa604237997541bcf5bd05498d947,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 49.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3600864102952013569, guid: 90afa604237997541bcf5bd05498d947,
         type: 3}
       propertyPath: m_RootOrder
@@ -3793,6 +3803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin Clean
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600864102952013630, guid: 90afa604237997541bcf5bd05498d947,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90afa604237997541bcf5bd05498d947, type: 3}
