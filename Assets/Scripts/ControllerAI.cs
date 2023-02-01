@@ -131,7 +131,7 @@ public class ControllerAI : MonoBehaviour
    {
        health -= damage;
        
-       if (health <= 0) Invoke(nameof(DestroyEnemy),.5f);
+       if (health <= 0) DestroyEnemy();
    }
 
    private void DestroyEnemy()
@@ -141,6 +141,7 @@ public class ControllerAI : MonoBehaviour
    
    private void OnCollisionEnter(Collision collision)
    {
+       Debug.Log("hit");
        TakeDamage(10);
         
    }
