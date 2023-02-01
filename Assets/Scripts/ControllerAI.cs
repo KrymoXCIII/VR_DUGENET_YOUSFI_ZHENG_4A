@@ -138,4 +138,10 @@ public class ControllerAI : MonoBehaviour
    {
        Destroy(gameObject);
    }
+   
+   private void OnCollisionEnter(Collision collision)
+   {
+       TakeDamage(10);
+        
+   }
 }
