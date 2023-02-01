@@ -15,7 +15,7 @@ public class ControllerAI : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public float health;
+    public int health = 100;
     
    // Patrouiller
    public Vector3 walkPoint;
@@ -131,7 +131,7 @@ public class ControllerAI : MonoBehaviour
    {
        health -= damage;
        
-       if (health <= 0) DestroyEnemy();
+       if (health <= 0) Invoke(nameof(DestroyEnemy),.5f);
    }
 
    private void DestroyEnemy()
