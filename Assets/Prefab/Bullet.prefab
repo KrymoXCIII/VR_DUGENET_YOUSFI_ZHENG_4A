@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3410389364395102598}
-  power: 10
+  power: 2000
 --- !u!54 &3410389364395102598
 Rigidbody:
   m_ObjectHideFlags: 0

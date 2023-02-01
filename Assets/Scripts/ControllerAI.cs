@@ -25,7 +25,7 @@ public class ControllerAI : MonoBehaviour
    // Attaquer
    public float timeBetweenAttacks;
    bool alreadyAttacked;
-   public GameObject projectile;
+   public GameObject projectile;  //= GameObject.Find("Bullet");
 
    // États
    public float sightRange, attackRange;
