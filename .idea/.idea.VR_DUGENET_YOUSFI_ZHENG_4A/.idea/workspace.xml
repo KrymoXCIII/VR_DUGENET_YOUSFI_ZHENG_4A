@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0448c959-ca74-456e-99f4-dd14e044e1a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hallway.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hallway.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/MenuPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MenuPrincipal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="0448c959-ca74-456e-99f4-dd14e044e1a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +71,7 @@
       <workItem from="1675096711821" duration="1874000" />
       <workItem from="1675102438071" duration="734000" />
       <workItem from="1675244154904" duration="2019000" />
-      <workItem from="1675259751728" duration="385000" />
+      <workItem from="1675259751728" duration="729000" />
     </task>
     <servers />
   </component>
