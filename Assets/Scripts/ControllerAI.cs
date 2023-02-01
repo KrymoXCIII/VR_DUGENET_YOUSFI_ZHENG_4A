@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -16,6 +17,10 @@ public class ControllerAI : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public int health = 100;
+
+    public TextMeshProUGUI scoreEndGame, scoreInGame;
+
+    public Transform spawnBullet;
     
    // Patrouiller
    public Vector3 walkPoint;
@@ -111,9 +116,9 @@ public class ControllerAI : MonoBehaviour
        if (!alreadyAttacked)
        {
            // Attaque
-           Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+           Rigidbody rb = Instantiate(projectile, spawnBullet.position, Quaternion.identity).GetComponent<Rigidbody>();
            rb.AddForce(transform.forward * 100f,ForceMode.Impulse);
-           rb.AddForce(transform.up * 5f,ForceMode.Impulse);
+           //rb.AddForce(transform.up * 5f,ForceMode.Impulse);
            
            alreadyAttacked = true;
            Invoke(nameof(ResetAttack),timeBetweenAttacks);
@@ -136,6 +141,12 @@ public class ControllerAI : MonoBehaviour
 
    private void DestroyEnemy()
    {
+       int sig = scoreInGame.text.ConvertTo<int>();
+       sig += 10;
+       scoreInGame.text = sig.ToString();
+       scoreEndGame.text = sig.ToString();
+       
+       
        Destroy(gameObject);
    }
    

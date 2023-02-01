@@ -181,12 +181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6406b19167d7c02438ac0365eda0f728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingForce: 5
+  shootingForce: 10
   recoilForce: 5
   bulletSpawn: {fileID: 3715391350409212787}
   damage: 10
   player: {fileID: 0}
-  bulletPrefab: {fileID: 627701232598751334, guid: 6522f3b6d77712044a916577476d71dd,
+  bulletPrefab: {fileID: -1169255300332879291, guid: eff8432ee8eb2fd4b8b34e0ed454c3a5,
     type: 3}
 --- !u!1 &4550081563217115173
 GameObject:

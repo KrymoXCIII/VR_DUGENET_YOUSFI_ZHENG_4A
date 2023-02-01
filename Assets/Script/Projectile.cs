@@ -16,12 +16,13 @@ public class Projectile : MonoBehaviour
 
     public virtual void Launch()
     {
-        GetComponent<Rigidbody>().AddForce(transform.forward * power, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(transform.forward * 100f, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(transform.up * 5f,ForceMode.Impulse);
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
         if (collision.gameObject.CompareTag("Enemy"))
         {
             EnemyManager Enemy = collision.gameObject.GetComponent(typeof(EnemyManager)) as EnemyManager;
