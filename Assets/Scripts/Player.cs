@@ -8,6 +8,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 { 
     public int hp = 100;
+
+    public GameObject InGameUI;
+
+    public GameObject EndGameUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,8 @@ public class Player : MonoBehaviour
     
     private void Dead()
     {
+        InGameUI.SetActive(false);
+        EndGameUI.SetActive(true);
         Debug.Log("DEAD!!");
     }
 
