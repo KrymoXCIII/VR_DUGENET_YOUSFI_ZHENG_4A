@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+
 
 public class Player : MonoBehaviour
 { 
@@ -30,6 +32,11 @@ public class Player : MonoBehaviour
     {
         Debug.Log("DEAD!!");
     }
-    
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("hit");
+        TakeDamage(10);
+        
+    }
 }
