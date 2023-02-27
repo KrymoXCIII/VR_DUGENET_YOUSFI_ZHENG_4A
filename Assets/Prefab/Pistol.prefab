@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6406b19167d7c02438ac0365eda0f728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingForce: 10
+  shootingForce: 5
   recoilForce: 5
   bulletSpawn: {fileID: 3715391350409212787}
   damage: 10

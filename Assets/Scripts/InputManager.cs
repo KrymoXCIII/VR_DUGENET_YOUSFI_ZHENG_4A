@@ -30,10 +30,12 @@ public class InputManager : MonoBehaviour
         _controller.ProcessMove(_onFoot.Movement.ReadValue<Vector2>());
     }
 
+    /*
     private void LateUpdate()
     {
         _look.ProcessLook(_onFoot.Look.ReadValue<Vector2>());
     }
+    */
 
     private void OnEnable()
     {

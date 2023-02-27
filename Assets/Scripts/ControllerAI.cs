@@ -152,8 +152,11 @@ public class ControllerAI : MonoBehaviour
    
    private void OnCollisionEnter(Collision collision)
    {
-       Debug.Log("hit");
-       TakeDamage(10);
+       
+           Debug.Log("hit");
+           TakeDamage(10);
+       
+       
         
    }
 }
