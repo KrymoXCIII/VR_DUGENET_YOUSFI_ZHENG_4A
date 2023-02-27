@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        //Destroy(gameObject);
+        
         if (collision.gameObject.CompareTag("Enemy"))
         {
             EnemyManager Enemy = collision.gameObject.GetComponent(typeof(EnemyManager)) as EnemyManager;
@@ -54,6 +54,7 @@ public class Projectile : MonoBehaviour
                 }
             }
         }
+        Destroy(gameObject);
     }
     
 

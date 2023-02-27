@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
         InGameUI.SetActive(false);
         EndGameUI.SetActive(true);
         Debug.Log("DEAD!!");
+        Time.timeScale = 0;
     }
 
     private void OnCollisionEnter(Collision collision)

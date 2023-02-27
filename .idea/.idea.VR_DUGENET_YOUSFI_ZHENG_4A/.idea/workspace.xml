@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0448c959-ca74-456e-99f4-dd14e044e1a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_DUGENET_YOUSFI_ZHENG_4A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_DUGENET_YOUSFI_ZHENG_4A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Pistol.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hallway.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hallway.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/MenuPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MenuPrincipal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Pistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Pistol.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControllerAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControllerAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/scoreupdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Core/Reflection/ConversionUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -122,19 +127,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player.cs</url>
-          <line>43</line>
-          <properties documentPath="C:\Users\Karym\Documents\GitHub\VR2\VR_DUGENET_YOUSFI_ZHENG_4A\Assets\Scripts\Player.cs" initialLine="43" containingFunctionPresentation="method 'OnCollisionEnter'">
-            <startOffsets>
-              <option value="769" />
-            </startOffsets>
-            <endOffsets>
-              <option value="786" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
