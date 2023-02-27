@@ -30,14 +30,14 @@ public class Projectile : MonoBehaviour
             if (Enemy != null)
             {
                 Enemy.PV -= 20;
-                //weapon.player.Score += 10;
+                weapon.player.Score += 10;
                 if (Enemy.PV <= 0)
                 {
                     Destroy(Enemy.gameObject);
-                   // weapon.player.Score += 50;
+                    weapon.player.Score += 50;
                 }
 
-                //weapon.player.TextScore.text = weapon.player.Score.ToString();
+                weapon.player.TextScore.text = weapon.player.Score.ToString();
 
             }
         }

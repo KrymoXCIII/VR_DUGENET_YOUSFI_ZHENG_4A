@@ -23,6 +23,8 @@ public class Weapon : MonoBehaviour
         interactableWeapon = GetComponent<XRGrabInteractable>();
         rb = GetComponent<Rigidbody>();
         SetupInteractableWeaponEvents();
+
+        //player = GameObject.Find("Player").transform.GetComponentInChildren<PlayerManager>();
     }
 
     private void SetupInteractableWeaponEvents()

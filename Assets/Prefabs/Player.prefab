@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4785996529986047024}
   - component: {fileID: 4785996529986047182}
   - component: {fileID: 4785996529986047025}
+  - component: {fileID: 939527723032723378}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -115,6 +116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  InGameUI: {fileID: 0}
+  EndGameUI: {fileID: 0}
 --- !u!114 &4785996529986047024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +163,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &939527723032723378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785996529986047030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4107350dd3613468f323e9ecc2beac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PV: 100
+  Score: 0
+  TextScore: {fileID: 0}

@@ -141,7 +141,7 @@ public class ControllerAI : MonoBehaviour
 
    private void DestroyEnemy()
    {
-       int sig = scoreInGame.text.ConvertTo<int>();
+       int sig = int.Parse(scoreInGame.text);
        sig += 10;
        scoreInGame.text = sig.ToString();
        scoreEndGame.text = sig.ToString();

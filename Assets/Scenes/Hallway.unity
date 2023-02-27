@@ -362,6 +362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5934606386659661644, guid: c71a4b4e00f6bc64da51ccc4ab7cb86b,
         type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 482061937}
+    - target: {fileID: 5934606386659661644, guid: c71a4b4e00f6bc64da51ccc4ab7cb86b,
+        type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 605969044}
@@ -914,6 +919,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2131312882}
     m_Modifications:
+    - target: {fileID: 939527723032723378, guid: 57b53892cd07eef488e13b2a602a703c,
+        type: 3}
+      propertyPath: TextScore
+      value: 
+      objectReference: {fileID: 878293000}
     - target: {fileID: 3651123876011154520, guid: 57b53892cd07eef488e13b2a602a703c,
         type: 3}
       propertyPath: InGameUI
@@ -992,6 +1002,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 482061935}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &482061937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 939527723032723378, guid: 57b53892cd07eef488e13b2a602a703c,
+    type: 3}
+  m_PrefabInstance: {fileID: 482061935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4107350dd3613468f323e9ecc2beac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &553865060 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3651123876011154520, guid: 57b53892cd07eef488e13b2a602a703c,
@@ -3317,6 +3339,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5934606386659661644, guid: c71a4b4e00f6bc64da51ccc4ab7cb86b,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 482061937}
     - target: {fileID: 5934606386659661644, guid: c71a4b4e00f6bc64da51ccc4ab7cb86b,
         type: 3}
       propertyPath: bulletPrefab
